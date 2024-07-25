@@ -81,7 +81,7 @@ header {
 }
 
 .game {
-  width: 700px;
+  width: 100%;
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -101,7 +101,7 @@ header {
   left: 28%;
   top: 35%;
   background: url(./images/bg-triangle.svg) no-repeat;
-  z-index: -1; /*makes sure it stays behind*/
+  z-index: -1; /* makes sure it stays behind */
 }
 
 .choice-btn {
@@ -476,5 +476,67 @@ footer {
   .play-again {
     padding: 0.4rem 2rem;
     font-size: 0.9rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .logo img {
+    height: 50%;
+  }
+
+  .score {
+    width: 80px;
+    height: auto;
+  }
+
+  .score h1 {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .game {
+    height: auto;
+    padding-top: 1rem;
+  }
+
+  .game::before {
+    width: 70%;
+    height: auto;
+  }
+
+  .results {
+    padding: 1rem 0.5rem;
+  }
+
+  .results_heading {
+    font-size: 1.2rem;
+  }
+
+  .results_text {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .play-again {
+    padding: 0.3rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .rules-btn {
+    padding: 0.4rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  footer {
+    bottom: 0.5rem;
   }
 }
